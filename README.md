@@ -9,7 +9,6 @@
       * [Guidelines for all team members](#guidelines-for-all-team-members)
    * [Best practices](#best-practices)
       * [npm scripts](#npm-scripts)
-      * [Git hooks](#git-hooks)
    * [What is this repository for?](#what-is-this-repository-for)
    * [How do I get set up?](#how-do-i-get-set-up)
    * [Which scripts are available?](#which-scripts-are-available)
@@ -55,10 +54,6 @@ Add as much dependencies to the package.json instead of relying on globally inst
 E.g.: If you are configuring an eslint task, add eslint as dev dependency. You will be able to run eslint by executing `./node_modules/.bin/eslint`.
 
 **Please note:** Not every executable is available in _./node_modules/.bin/_. For easier development it is advised to add the command as npm script. Instead of using _./node_modules/.bin/_, you can use _npm-run_ in your script. This means that `./node_modules/.bin/eslint` becomes `npm-run eslint`. Checkout the _package.json_ file for more examples.
-
-## Git hooks ##
-
-To do
 
 # What is this repository for? #
 
