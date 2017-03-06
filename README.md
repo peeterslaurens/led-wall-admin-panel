@@ -123,7 +123,7 @@ This repository is forked from the Front End Ops [boilerplate]. The template con
 
 ## Create an issue ##
 
-If you find a bug in one of these repositories, have trouble following the documentation or have a question about the project – create an issue! There's nothing to it and whatever issue you're having, you're likely not the only one, so others will find your issue helpful, too. For more information on how issues work, check out our [Issues guide].
+If you find a bug in one of these repositories, have trouble following the documentation or have a question about the project – create an issue! There's nothing to it and whatever issue you're having, you're likely not the only one, so others will find your issue helpful, too.
 
 ## Open pull request ##
 
