@@ -45,16 +45,6 @@
 * Go through the README.md and complete where necessary
 * Have fun coding
 
-# Best practices #
-
-## npm scripts ##
-
-Add as much dependencies to the package.json instead of relying on globally installed packages.
-
-E.g.: If you are configuring an eslint task, add eslint as dev dependency. You will be able to run eslint by executing `./node_modules/.bin/eslint`.
-
-**Please note:** Not every executable is available in _./node\_modules/.bin/_. For easier development it is advised to add the command as npm script. Instead of using _./node\_modules/.bin/_, you can use _npm-run_ in your script. This means that `./node_modules/.bin/eslint` becomes `npm-run eslint`. Checkout the _package.json_ file for more examples.
-
 # What is this repository for? #
 
 * Quick summary
