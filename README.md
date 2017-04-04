@@ -103,23 +103,6 @@ All commands are executable by running `npm run [COMMAND-NAME]`.
 * Repo owner or admin (email)
 * Other team members (email)
 
-# Contributing to the boilerplate #
-
-This repository is forked from the Front End Ops [boilerplate]. The template consists of these repositories:
-* [editorconfig]
-* [gitignore]
-* [script-linting]
-* [style-linting]
-
-## Create an issue ##
-
-If you find a bug in one of these repositories, have trouble following the documentation or have a question about the project – create an issue! There's nothing to it and whatever issue you're having, you're likely not the only one, so others will find your issue helpful, too.
-
-## Open pull request ##
-
-If you're able to patch the bug or add the feature yourself – fantastic, make a pull request with the code! Be sure you've read any documents on contributing. Once you've submitted a pull request the maintainer(s) can compare your branch to the existing one and decide whether or not to incorporate (pull in) your changes.
-
-
 [//]: # (All links should be included below)
 
    [//]: # (Url's where the project can be found)
@@ -130,12 +113,8 @@ If you're able to patch the bug or add the feature yourself – fantastic, make 
    [//]: # (Front End Ops repositories)
    [Issues guide]: <https://bitbucket.org/district01/boilerplate/issues?status=new&status=open>
    [boilerplate]: <https://bitbucket.org/district01/boilerplate>
-   [editorconfig]: <https://bitbucket.org/district01/editorconfig>
-   [gitignore]: <https://bitbucket.org/district01/gitignore>
    [machine-setup]: <https://bitbucket.org/district01/machine-setup>
    [npm-scripts]: <https://bitbucket.org/district01/npm-scripts>
-   [script-linting]: <https://bitbucket.org/district01/script-linting>
-   [style-linting]: <https://bitbucket.org/district01/style-linting>
 
    [//]: # (Miscellaneous)
    [github-markdown-toc]: <https://github.com/ekalinin/github-markdown-toc>
