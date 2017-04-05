@@ -4,8 +4,24 @@
   "description": "Boilerplate for consistent project structures and maintenance.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "projectsheet": "open $npm_package_district01_projectsheet"
+    "clean": "rm -rf ./dist && mkdir dist",
+    "projectsheet": "open $npm_package_district01_projectsheet",
+    "pm2": "pm2",
+    "nodemon": "./node_modules/.bin/nodemon",
+    "watch": "./node_modules/.bin/parallelshell \"npm run watch:css\" \"npm run watch:images\"",
+    "watch:css": "./node_modules/.bin/nodemon -w src/assets/scss -e scss -x \"npm run build:css\"",
+    "watch:images": "./node_modules/.bin/nodemon -w src/assets/img -e jpg,jpeg,png -x \"npm run build:images\"",
+    "lint": "./node_modules/.bin/parallelshell \"npm run lint:eslint\" \"npm run lint:sass\"",
+    "lint:eslint": "./node_modules/.bin/eslint .",
+    "lint:tslint": "./node_modules/.bin/tslint .",
+    "lint:sass": "./node_modules/.bin/sass-lint .",
+    "serve": "./node_modules/.bin/live-server --port=8666 ./src",
+    "build": "./node_modules/.bin/parallelshell \"npm run build:css\" \"npm run build:images\"",
+    "build:ts": "./node_modules/.bin/tsc .",
+    "build:webpack": "./node_modules/.bin/webpack --config webpack.config.js",
+    "build:css": "./node_modules/.bin/node-sass src/assets/scss/styles.scss -o dist",
+    "build:images": "echo \"No command specified\" && exit 0",
+    "fixtures": "echo \"No command specified\" && exit 0"
   },
   "repository": {
     "type": "git",
@@ -17,7 +33,20 @@
     "Thomas Bormans <thomas.bormans@district01.be"
   ],
   "license": "ISC",
-
+  "homepage": "https://bitbucket.org/district01/boilerplate#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "3.8.1",
+    "gulp": "3.9.1",
+    "live-server": "1.1.0",
+    "node-sass": "4.2.0",
+    "nodemon": "1.11.0",
+    "parallelshell": "2.0.0",
+    "pm2": "2.0.19",
+    "sass-lint": "1.9.1",
+    "tslint": "3.15.1",
+    "webpack": "2.2.0-rc.4"
+  },
   "district01": {
     "projectsheet": "https://bitbucket.org/district01/boilerplate/overview"
   }
