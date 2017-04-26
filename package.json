@@ -4,6 +4,10 @@
   "description": "Boilerplate for consistent project structures and maintenance.",
   "main": "index.js",
   "scripts": {
+    "start": "npm i",
+    "version:patch": "npm --no-git-tag-version version patch",
+    "version:minor": "npm --no-git-tag-version version minor",
+    "version:major": "npm --no-git-tag-version version major",
     "clean": "rm -rf ./dist && mkdir dist",
     "projectsheet": "open $npm_package_district01_projectsheet",
     "pm2": "pm2",
