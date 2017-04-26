@@ -7,7 +7,10 @@ Short description of the project.
 * [Setup](#setup)
     * [System Dependencies](#system-dependencies)
     * [Init](#init)
+* [Codebase](#codebase)
+    * [NPM Scripts](#npm-scripts)
 * [Code Contribution](#code-contribution)
+    * [Guidelines](#guidelines)
     * [Branches](#branches)
 * [Environments](#environments)
 * [Project Context](#project-context)
@@ -30,18 +33,51 @@ Short description of the project.
 * `npm i`
 
 
+## Codebase
+
+### NPM Scripts
+
+| Command       | Description                                 |
+| ------------- |-------------------------------------------- |
+| clean         | Remove the dist folder.                     |
+| projectsheet  | Open the projectsheet on Google Drive       |
+| pm2           | Run the project with pm2                    |
+| nodemon       | Run the project with nodemon                |
+| watch         | Run all the watch tasks                     |
+| watch:css     | Watch for sass changes and build css        |
+| watch:images  | Watch for image changes and compile images  |
+| lint          | Run all the lint tasks                      |
+| lint:eslint   | Run eslint                                  |
+| lint:tslint   | Run tslint lint                             |
+| lint:sass     | Run sass lint                               |
+| serve         | Serve the current project on port 86666     |
+| build         | Run all the build tasks                     |
+| build:ts      | Build typescript                            |
+| build:css     | Build sass                                  |
+| build:images  | Compile images                              |
+| fixtures      | Seed the database                           |
+| ...           | ...                                         |
+
+All commands are executable by running `npm run [COMMAND-NAME]`.
+
+
+
+
 ## Code Contribution
+
+### Guidelines
+
 
 ### Branches
 
 We follow these naming conventions:
 
-* **master**
-* **develop**
-* **release/***:
-* **feature/***
-* **bugfix/***
-* **hotfix/***: Used only for hotfixing critical bugs from the `master`-branch.
+* **master**: Production-ready code.
+* **develop**: Development code.
+* **release/***: Snapshot of a release.
+* **feature/***: For developing new features.
+* **bugfix/***: For bugs that are logged during testing.
+* **hotfix/***: Only for hotfixing critical bugs from the `master`-branch.
 
 
 
